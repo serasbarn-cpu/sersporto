@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>sera's portfolio</title>
+
+    <link rel="icon" href="cat.ico">
+</head>
+
+<body>
+    <header class="header">
+        <img src="oi.jpeg" alt="me" width="40" height="40">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about me</a>
+            <a href="#experiences">experiences</a>
+            <a href="#contacts">contacts</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <main>
+            <h1>hello, i'm <span style="color:orangered">Kozen!</span></h1>
+            <img src="sera.jpeg" alt="girl" class="profile">
+            <div class="buttons">
+                <button class="button" onclick="location.href='#about'">
+                    about me
+                </button>
+                <button class="button" onclick="location.href='#experiences'">
+                    experiences
+                </button>
+
+                <button class="button" onclick="location.href='#contacts'">
+                    contacts
+                </button>
+            </div>
+        </main>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading" style="color:orangered">about me</h2>
+            <h1>Hi!</h1>
+            <p>My name is <span style="color: orange">Kozen Serafim Sibarani.</span>
+                I'm currently majoring in Electrical Engineering at Universitas Padjajaran. </p>
+            <p>I interested in technology, design, and continuous learning.
+                Focused on building skills in web development and creative digital solutions.</p>
+        </div>
+
+        <div class="img">
+            <img src="sera.jpeg" alt="me">
+        </div>
+
+        <div class="education">
+            <h3 style="color:orange">Education</h3>
+            <table>
+                <tr>
+                    <td>2025 - </td>
+                    <td>
+                        Universitas Padjadjaran <br>
+                        Electrical Engineering
+                    </td>
+                </tr>
+                <tr>
+                    <td>2023 - 2025</td>
+                    <td>
+                        SMA Negeri 100 Jakarta <br>
+                        Science
+                    </td>
+                </tr>
+                <tr>
+                    <td>2019 - 2022</td>
+                    <td>
+                        SMP Negeri 255 Jakarta
+                    </td>
+                </tr>
+                <tr>
+                    <td>2013 - 2019</td>
+                    <td>
+                        SDK 4 Penabur Jakarta
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </section>
+
+    <section class="experiences" id="experiences">
+        <h2 style="color: orangered">experiences</h2>
+        <div class="exp-box">
+            <div class="exp">
+                <h3 style="color:orange">organization</h3>
+                <table>
+                    <tr>
+                        <td>November 2025</td>
+                        <td>
+                            <span style="color:orangered"><b>Futura 2025</b></span><br>
+                            Volunteer Divisi Dekorasi
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>September-October 2025</td>
+                        <td>
+                            <span style="color:orangered"><b>Project Angkatan 2025</b></span><br>
+                            Staff Divisi Publikasi, Dekorasi, dan Dokumentasi
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>September-October 2025</td>
+                        <td>
+                            <span style="color:orangered"><b>LED 2025</b></span><br>
+                            Staff Divisi Publikasi, Dekorasi, dan Dokumentasi
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="projects">
+                <h3 style='color:orange'>projects</h3>
+                <table>
+                    <tr>
+                        <td>2026</td>
+                        <td>
+                            <span style="color:orangered"><b>Personal Portofolio Website</b></span><br>
+                            using HTML, CSS, and JavaScript
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2025</td>
+                        <td>
+                            <span style="color:orangered"><b>Line-follower</b></span><br>
+                            using Sensors and Microcontroller
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+
+        <h2 class="heading" style="color:orangered">contact me!</h2>
+
+        <p>I'm always open to new connections, collaboration, or just a friendly hello!</p>
+
+        <form id="contact-form" onsubmit="sendMessage()">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="full name">
+                <textarea name="message" placeholder="your message"></textarea>
+                <input type="submit" value="send message" class="button">
+            </div>
+        </form>
+
+        <h3 style="color:orange">for more!</h3>
+
+        <div class="social-buttons">
+            <button onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=serasbarn@gmail.com')">
+                gmail
+            </button>
+
+            <button onclick="window.open('https://instagram.com/sersibarani')">
+                instagram
+            </button>
+        </div>
+    </section>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
